@@ -87,7 +87,7 @@ function Login() {
                         JSON.stringify(response.data.user[0])
                       );
                       setIsLoading(false);
-                      return redirect("/admin");
+                      window.location.href = "/admin";
                     } else {
                       localStorage.setItem("userObject", response.data.user[0]);
                       localStorage.setItem(
